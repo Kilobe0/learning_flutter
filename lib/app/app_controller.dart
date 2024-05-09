@@ -12,7 +12,7 @@ class AppController {
     changeThemeViewmodel.init();
   }
 
-  final ChangeThemeViewmodel changeThemeViewmodel = ChangeThemeViewmodel(
+  final ChangeThemeViewModel changeThemeViewmodel = ChangeThemeViewModel(
     SharedLocalStorageService(),
   );
 

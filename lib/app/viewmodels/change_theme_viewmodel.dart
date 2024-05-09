@@ -2,12 +2,12 @@ import 'package:learning_flutter/app/interfaces/local_storage_interface.dart';
 
 import '../models/appconfig_model.dart';
 
-class ChangeThemeViewmodel {
+class ChangeThemeViewModel {
   final ILocalStorage storage;
 
   final AppConfigModel config = AppConfigModel();
 
-  ChangeThemeViewmodel(this.storage);
+  ChangeThemeViewModel(this.storage);
 
   Future init() async {
     await storage.get('isDark').then(
