@@ -15,7 +15,7 @@ class _CustomSwitchWidgetState extends State<CustomSwitchWidget> {
     return Switch(
       value: AppController.instance.isDark,
       onChanged: (value) {
-        AppController.instance.changeTheme(value);
+        AppController.instance.changeThemeViewmodel.changeTheme(value);
         setState(() {});
       },
     );
