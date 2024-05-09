@@ -10,6 +10,10 @@ class ApiadvisorViewModel {
   ApiadvisorViewModel(this.repository);
 
   Future<void> fill() async {
-    apiadvisorModel.value = await repository.getWeather();
+    try {
+      apiadvisorModel.value = await repository.getWeather();
+    } catch (e) {
+      print(e);
+    }
   }
 }
