@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learning_flutter/app/pages/home/home_page.dart';
 
-import 'controllers/app_controller.dart';
+import 'app_controller.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
